@@ -47,5 +47,10 @@ public class Main {
         System.out.println("Long Minimum Value: " + myMinLongValue);
         System.out.println("Long Maximum Value: " + myMaxLongValue);
 
+        //Narrow casting
+        int myTotal = (myMinIntValue /2 );
+        byte myByte = (byte) (myMinByteValue / 2);
+
+
     }
 }
