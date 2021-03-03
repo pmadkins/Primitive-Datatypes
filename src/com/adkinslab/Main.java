@@ -66,8 +66,52 @@ public class Main {
         long longTotal = 50000L + 10L * (byteValue + shortValue + intValue);
         System.out.println(longTotal);
 
+        /*Continuing with Float and Double
+        Float uses 32 bits, is single precision
+        Double uses 64 bits, is double precision
+        Double is default by Java if not specified and is faster.
+         */
+        float myMinFloatValue = Float.MIN_VALUE;
+        float myMaxFloatValue = Float.MAX_VALUE;
+        System.out.println("Float Minimum Value: " + myMinFloatValue);
+        System.out.println("Float Maximum Value: " + myMaxFloatValue);
+
+        double myMinDoubleValue = Float.MIN_VALUE;
+        double myMaxDoubleValue = Double.MAX_VALUE;
+        System.out.println("Double Minimum Value: " + myMinDoubleValue);
+        System.out.println("Double Maximum Value: " + myMaxDoubleValue);
+
+        //Challenge - Cast the myFloatValue to a float when the f is not specified.
+        int myIntValue = 5;
+        float myFloatValue = (float) 5.25; //the obvious answer in real world application would be to add the f after the value.
+        double myDoubleValue = 5d;
 
 
+        //Char and Boolean primitive types
+        char myChar = 'D';
+        char myUnicodeChar = '\u0044';
+        System.out.println(myChar);
+        System.out.println(myUnicodeChar);
+
+        char myCopyrightChar = '\u00A9';
+        System.out.println(myCopyrightChar);
+
+        boolean trueValue = true;
+        boolean falseValue = false;
+
+        //Real world example of boolean in action
+        boolean isCustomerOverTwentyOne = true;
+
+        //Strings
+        String myString = "This is a string.";
+        System.out.println("myString is equal to " + myString);
+        myString = myString + ", and this is more.";
+
+        //This will not produce the desired outcome - you cannot add two strings even if they are numbers
+        //this code will mush the two strings together to read 250.5549.95.
+        String numberString = "250.55";
+        numberString = numberString + "49.95";
+        System.out.println(numberString);
 
 
     }
